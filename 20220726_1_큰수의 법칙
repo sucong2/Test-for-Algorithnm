@@ -1,4 +1,4 @@
-n, m,k = map(int, input().split())
+n,d m,k = map(int, input().split())
 data = list(map(int, input().split()))
 
 data.sort()
@@ -15,7 +15,7 @@ result += (m- count) * second
 print(result)
 
 
-### example
+#example
 
 input_1: 5 3 8
 input_2: 3 4 5 4 6
