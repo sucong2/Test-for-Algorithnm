@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMhQJSi7tMaCy7d6CqpIev0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sucong2/Test-for-python/blob/main/book/%EC%99%95%EC%8B%A4%EC%9D%98%EB%82%98%EC%9D%B4%ED%8A%B8\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dJ-NroGAx23k",
+        "outputId": "05d4ce62-4691-45ca-f2e2-7d4dbd105aa6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "b3\n",
+            "7\n"
+          ]
+        }
+      ],
+      "source": [
+        "input_data = input()\n",
+        "row = int(input_data[1])\n",
+        "colum = int(ord(input_data[0])) - int(ord('a')) + 1\n",
+        "\n",
+        "steps = [(-2,1),(-1,2),(1,-2),(2,-1),(2,1),(1,2),(-1,2),(-2,1)] # 왜??\n",
+        "result = 0\n",
+        "for step in steps:\n",
+        "  next_row = row + step[0]\n",
+        "  next_colum = colum + step[1]\n",
+        "\n",
+        "  if next_row >= 1 and next_row <= 8 and next_colum >= 1  and next_colum <= 8:\n",
+        "    result += 1\n",
+        "\n",
+        "print(result)\n"
+      ]
+    }
+  ]
+}
