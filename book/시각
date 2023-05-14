@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNZUdKUiUXtrS/GLRUem6Xm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sucong2/Test-for-python/blob/main/book/%EC%8B%9C%EA%B0%81\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gyv1rVAwwrIA",
+        "outputId": "cd1a1139-25b2-4cf1-b568-a0809846ef1f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "11475\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input())\n",
+        "count = 0\n",
+        "for i in range(n+1):\n",
+        "  for j in range(60):\n",
+        "    for k in range(60):\n",
+        "      if '3' in str(i) + str(j) + str(k):\n",
+        "        count+=1\n",
+        "\n",
+        "print(count)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "EISjWlfbxmEE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
